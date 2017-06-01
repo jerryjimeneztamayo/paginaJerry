@@ -10,7 +10,8 @@ end
 
 get "/" do
   @name = 2/0
-  "Hola" + @name
+  @apellido = "Jimenez"
+  "Hola" + @name + @apellido 
 end
 
 get "/sub" do

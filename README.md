@@ -13,4 +13,8 @@ Se crea una copia del repositorio en la computadora local mediante source tree e
  Con el comando "atom ." puedes abrir el editor Atom en el directorio en el que se encuentra y comenzar a editar el app.rb, una vez que se hagan los cambios, se tiene que "anotar" en el SourceTree y posteriormente hacerle "push" al origen (Github)
 
  ## Paso 5
- Crear el gemfile  
+ Crear el gemfile , instalar las gemas con el "bundle install"
+
+ ## Paso 6
+ Instalar la gema better_errors y configurar la variable development para que funcione
+ 
