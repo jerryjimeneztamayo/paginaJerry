@@ -1,9 +1,25 @@
+<%  empleado1 = { nombre: "Jerry Jiménez", puesto: "Gerente", correo: "jjimenez@student.com"}%>
+<%  empleado2 = {nombre: "Carlos Segura", puesto: "Cajero", correo: "csegura@student.com"}%>
+<%  empleado3 = {nombre: "Adriana Carrillo", puesto: "Cajero", correo: "acarrillo@student.com"}%>
+<%  empleado4 = {nombre: "Pedro Estrella", puesto: "Mesero", correo: "no aplica"}%>
+<%  empleado5 = {nombre: "Esmeralda Aquino", puesto: "Mesero", correo: "no aplica"}%>
+<%  empleado6 = {nombre: "Fabiola Alcocer", puesto: "Mesero", correo: "no aplico" }%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>¿Quienes somos?</title>
+        <link type="text/css" rel="stylesheet" href="Mi-estilo.css"/>
     </head>
     <body bgcolor= "#D7CCC8">
+
+      <div id="navegador">
+      <ul>
+      <li><a href="/quienes-somos">¿Quienes somos?</a></li>
+      <li><a href="/nuestro-menu">Nuestro menú</a></li>
+      <li><a href="/ubicacion">Unicación</a></li>
+      </ul>
+      </div>
 
         <h1>¿Quienes somos?</h1>
 
@@ -25,4 +41,23 @@
          mes, de tal forma que puedan tener fácil accesibilidad a nuestras
          bebidas y alimentos. </p>
     </body>
+
+<h1 >Equipo de trabajo </h1>
+
+  <table>
+    <tr>
+      <td><strong>Nombre</strong></td>
+      <td><strong>Puesto</strong></td>
+      <td><strong>Correo</strong></td>
+    </tr>
+
+    <tr>
+      <td><%empleado1["nombre"]%></td>
+      <td><%empleado2["puesto"]%></td>
+      <td><%empleado3["correo"]%></td>
+    </tr>
+  </table>
+
+
+
 </html>

@@ -17,4 +17,6 @@ Se crea una copia del repositorio en la computadora local mediante source tree e
 
  ## Paso 6
  Instalar la gema better_errors y configurar la variable development para que funcione
- 
+
+ ## Paso 7
+ Se crearon las vistas, en este caso fueron 3, la principal, una de quienes somos, una de nuestro menú y una de ubicación 
