@@ -9,11 +9,17 @@ configure :development do
 end
 
 get "/" do
-  @name = 2/0
-  @apellido = "Jimenez"
-  "Hola" + @name + @apellido 
+  erb :index
 end
 
-get "/sub" do
-  "Hola"
+get "/quienes-somos" do
+  erb :quienes_somos
+end
+
+get "/nuestro-menu" do
+  erb :nuestro_menu
+end
+
+get "/ubicacion" do
+  erb :ubicacion
 end
