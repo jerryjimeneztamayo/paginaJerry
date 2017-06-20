@@ -59,14 +59,13 @@
     <td><strong>Correo</strong></td>
   </tr>
 
+  <% @empleados.each do |empleado|%>
   <tr>
-    <% @empleados.each do |empleado|%>
     <td><%=empleado[:nombre]%></td>
     <td><%=empleado[:puesto]%></td>
     <td><%=empleado[:correo]%></td>
-    <% end%>
-
   </tr>
+  <% end%>
 </table>
 
 
