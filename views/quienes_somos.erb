@@ -49,10 +49,25 @@
 <h1 >Equipo de trabajo </h1>
 
 
-<% @empleados.each do |empleado|%>
-<%= empleado %>
-<% end%>
 
+
+
+<table>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td><strong>Puesto</strong></td>
+    <td><strong>Correo</strong></td>
+  </tr>
+
+  <tr>
+    <% @empleados.each do |empleado|%>
+    <td><%=empleado[:nombre]%></td>
+    <td><%=empleado[:puesto]%></td>
+    <td><%=empleado[:correo]%></td>
+    <% end%>
+
+  </tr>
+</table>
 
 
 
