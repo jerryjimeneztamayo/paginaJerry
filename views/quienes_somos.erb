@@ -48,19 +48,9 @@
 
 <h1 >Equipo de trabajo </h1>
 
-  <table>
-    <tr>
-      <td><strong>Nombre</strong></td>
-      <td><strong>Puesto</strong></td>
-      <td><strong>Correo</strong></td>
-    </tr>
-
-    <tr>
-      <td><% @empleados[0][":nombre"]%></td>
-      <td><% @empleados[0][":puesto"]%></td>
-      <td><% @empleados[0][":correo"]%></td>
-    </tr>
-  </table>
+<% @empleados.each do |empleado|%>
+<% puts "#{empleado}" %>
+<% end%>
 
 
 
