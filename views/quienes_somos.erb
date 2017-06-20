@@ -1,9 +1,17 @@
-<%  empleado1 = { nombre: "Jerry Jiménez", puesto: "Gerente", correo: "jjimenez@student.com"}%>
+<% empleados = [] %>
+<%  empleado1 = {nombre: "Jerry Jiménez", puesto: "Gerente", correo: "jjimenez@student.com"}%>
 <%  empleado2 = {nombre: "Carlos Segura", puesto: "Cajero", correo: "csegura@student.com"}%>
 <%  empleado3 = {nombre: "Adriana Carrillo", puesto: "Cajero", correo: "acarrillo@student.com"}%>
 <%  empleado4 = {nombre: "Pedro Estrella", puesto: "Mesero", correo: "no aplica"}%>
 <%  empleado5 = {nombre: "Esmeralda Aquino", puesto: "Mesero", correo: "no aplica"}%>
 <%  empleado6 = {nombre: "Fabiola Alcocer", puesto: "Mesero", correo: "no aplico" }%>
+<% empleados.push(empleado1) %>
+<% empleados.push(empleado2) %>
+<% empleados.push(empleado3) %>
+<% empleados.push(empleado4) %>
+<% empleados.push(empleado5) %>
+<% empleados.push(empleado6) %>
+
 
 <!DOCTYPE html>
 <html>
@@ -15,6 +23,7 @@
 
       <div id="navegador">
       <ul>
+      <li><a href="/">Inicio</a></li>
       <li><a href="/quienes-somos">¿Quienes somos?</a></li>
       <li><a href="/nuestro-menu">Nuestro menú</a></li>
       <li><a href="/ubicacion">Unicación</a></li>
@@ -52,9 +61,9 @@
     </tr>
 
     <tr>
-      <td><%empleado1["nombre"]%></td>
-      <td><%empleado2["puesto"]%></td>
-      <td><%empleado3["correo"]%></td>
+      <td><% empleados[0][":nombre"]%></td>
+      <td><% empleados[0][":puesto"]%></td>
+      <td><% empleados[0][":correo"]%></td>
     </tr>
   </table>
 
